@@ -1,0 +1,15 @@
+D:\data adrian\Program\DotNet\FundamentalUpskilling\bin\Debug\net6.0\FundamentalUpskilling.exe
+D:\data adrian\Program\DotNet\FundamentalUpskilling\bin\Debug\net6.0\FundamentalUpskilling.deps.json
+D:\data adrian\Program\DotNet\FundamentalUpskilling\bin\Debug\net6.0\FundamentalUpskilling.runtimeconfig.json
+D:\data adrian\Program\DotNet\FundamentalUpskilling\bin\Debug\net6.0\FundamentalUpskilling.dll
+D:\data adrian\Program\DotNet\FundamentalUpskilling\bin\Debug\net6.0\FundamentalUpskilling.pdb
+D:\data adrian\Program\DotNet\FundamentalUpskilling\obj\Debug\net6.0\FundamentalUpskilling.csproj.AssemblyReference.cache
+D:\data adrian\Program\DotNet\FundamentalUpskilling\obj\Debug\net6.0\FundamentalUpskilling.GeneratedMSBuildEditorConfig.editorconfig
+D:\data adrian\Program\DotNet\FundamentalUpskilling\obj\Debug\net6.0\FundamentalUpskilling.AssemblyInfoInputs.cache
+D:\data adrian\Program\DotNet\FundamentalUpskilling\obj\Debug\net6.0\FundamentalUpskilling.AssemblyInfo.cs
+D:\data adrian\Program\DotNet\FundamentalUpskilling\obj\Debug\net6.0\FundamentalUpskilling.csproj.CoreCompileInputs.cache
+D:\data adrian\Program\DotNet\FundamentalUpskilling\obj\Debug\net6.0\FundamentalUpskilling.dll
+D:\data adrian\Program\DotNet\FundamentalUpskilling\obj\Debug\net6.0\refint\FundamentalUpskilling.dll
+D:\data adrian\Program\DotNet\FundamentalUpskilling\obj\Debug\net6.0\FundamentalUpskilling.pdb
+D:\data adrian\Program\DotNet\FundamentalUpskilling\obj\Debug\net6.0\FundamentalUpskilling.genruntimeconfig.cache
+D:\data adrian\Program\DotNet\FundamentalUpskilling\obj\Debug\net6.0\ref\FundamentalUpskilling.dll
