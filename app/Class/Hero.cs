@@ -5,8 +5,8 @@
     -> Nama method sama dengan parameter yang berbeda
     -> Returnnya tidak boleh berbeda
 
-    Overload
-    Overriding => Menulis ulang yang ada di parent
+    Overload => Menulis ulang method dengan parameter yang berbeda
+    Overriding 
 */
 
 namespace FundamentalUpskilling;
@@ -46,7 +46,7 @@ public class Hero
 
 public class Game
 {
-    public static void Main(string[] args)
+    public void Main(string[] args)
     {
         var layla = new Hero
         {
