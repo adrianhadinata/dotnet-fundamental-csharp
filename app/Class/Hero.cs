@@ -53,7 +53,7 @@ public class Hero : IHitAble
 
 public class Game
 {
-    public static void Main(string[] args)
+    public void Main(string[] args)
     {
         IHitAble layla = new Hero
         {
