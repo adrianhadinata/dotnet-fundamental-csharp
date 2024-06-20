@@ -10,63 +10,69 @@
 */
 
 namespace FundamentalUpskilling;
-public class Hero
+public class Hero : IHitAble
 {
     public string Name { get; set; }
     public int HP { get; set; }
     public int BaseDamage { get; set; }
 
-    public void Attack(Hero hero)
+    public void Attack(IHitAble hitAble)
     {
         Console.Write($"{Name} melakukan attack sebesar ");
         Console.WriteLine(BaseDamage);
 
-        hero.GetHit(BaseDamage);
+        hitAble.GetHit(BaseDamage);
 
-        Console.Write($"{hero.Name} terkena serangan, hp tersisa ");
-        Console.WriteLine(hero.HP);
+        // Console.Write($"{hero.Name} terkena serangan, hp tersisa ");
+        // Console.WriteLine(hero.HP);
     }
 
-    public void Attack(Monster monster)
-    {
-        Console.Write($"{Name} melakukan attack sebesar ");
-        Console.WriteLine(BaseDamage);
+    //Contoh overload
+    // public void Attack(Monster monster)
+    // {
+    //     Console.Write($"{Name} melakukan attack sebesar ");
+    //     Console.WriteLine(BaseDamage);
 
-        monster.GetHit(BaseDamage);
+    //     monster.GetHit(BaseDamage);
 
-        Console.Write($"{monster.Name} terkena serangan, hp tersisa ");
-        Console.WriteLine(monster.HP);
-    }
+    //     Console.Write($"{monster.Name} terkena serangan, hp tersisa ");
+    //     Console.WriteLine(monster.HP);
+    // }
 
     public void GetHit(int damage)
     {
         HP -= damage;
     }
+
+    public void GetHealthPoint()
+    {
+        Console.Write("Hp musuh tersisa ");
+        Console.WriteLine(HP);
+    }
 }
 
 public class Game
 {
-    public void Main(string[] args)
+    public static void Main(string[] args)
     {
-        var layla = new Hero
+        IHitAble layla = new Hero
         {
             Name = "Layla",
             HP = 100,
             BaseDamage = 10
         };
 
-        var hayabusa = new Hero
+        IHitAble hayabusa = new Hero
         {
             Name = "Hayabusa",
             HP = 100,
             BaseDamage = 20
         };
 
-        Console.WriteLine(hayabusa.HP);
-
         layla.Attack(hayabusa);
+        hayabusa.GetHealthPoint();
 
-        var orc = new Monster
+        IHitAble orc = new Monster
         {
             Name = "Orc",
             HP = 100,
@@ -74,5 +80,6 @@ public class Game
         };
 
         hayabusa.Attack(orc);
+        orc.GetHealthPoint();
     }
 }

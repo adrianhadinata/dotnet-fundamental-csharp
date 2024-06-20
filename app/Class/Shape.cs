@@ -3,6 +3,8 @@ namespace FundamentalUpskilling;
 
 /*
     Perbedaan antara virtual dan abstract: virtual itu pewarisan sebuah method / attribute namun tidak wajib di override, kalau abstract wajib di override (Karena parent belum jelas)
+
+    Abstract class tidak bisa di instance (New abstractClass)
 */
 
 public abstract class Shape
@@ -50,5 +52,8 @@ public class ProgramShape
         
         Console.WriteLine(rectangle.GetSurface());
         Console.WriteLine(triangle.GetSurface());
+
+        // will causing error
+        // var shape = new Shape();
     }
 }
