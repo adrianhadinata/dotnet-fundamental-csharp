@@ -2,7 +2,7 @@ namespace FundamentalUpskilling;
 
 public class Collection
 {
-    public void Main(string[] args)
+    public static void Main(string[] args)
     {
         /*
             Collection mirimp dengan array
@@ -53,6 +53,10 @@ public class Collection
         {
             Console.WriteLine($"{city.Key} : {city.Value}");
         }
+
+        Collection hashSet = new Collection();
+
+        hashSet.HashSet();
         
     }
 
@@ -77,6 +81,11 @@ public class Collection
         Console.WriteLine("Masukan Nama yang ingin di update: ");
 
         string namee = Console.ReadLine();
+        
+        if(!names.Contains(namee))
+        {
+            throw new NotFoundException("Name not found");
+        }
 
         Console.Write("Masukan Nama yang terupdate: ");
 

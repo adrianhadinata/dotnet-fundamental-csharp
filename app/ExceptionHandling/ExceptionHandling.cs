@@ -2,7 +2,7 @@ namespace FundamentalUpskilling;
 
 public class ExceptionHandling
 {
-    public static void Main(string[] args)
+    public void Main(string[] args)
     {
         /*
             Macam - macam exception:
@@ -40,5 +40,5 @@ public class ExceptionHandling
 
     }
 
-    
+
 }
